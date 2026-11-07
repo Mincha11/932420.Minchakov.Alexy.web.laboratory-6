@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17152b">
+
+    <title>Калькулятор</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icons/icon.svg">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a class="logo" href="/">Калькулятор</a>
+
+            <nav>
+                <a href="/">Главная</a>
+                <a href="/about">О проекте</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <p class="eyebrow">Лабораторная работа №6 · Вариант 5</p>
+
+            <h1>Арифметический калькулятор</h1>
+
+            <p>
+                Введи два числа, выбери операцию —
+                сервер Express выполнит вычисление.
+            </p>
+        </section>
+
+        <section class="calculator card">
+
+            <h2>Калькулятор</h2>
+
+            <form id="calculator-form">
+
+                <label for="number-a">Первое число (a)</label>
+                <input
+                    id="number-a"
+                    type="number"
+                    step="any"
+                    placeholder="Например, 5"
+                    required
+                >
+
+                <label for="operation">Операция</label>
+
+                <select id="operation">
+                    <option value="+">Сложение (+)</option>
+                    <option value="-">Вычитание (-)</option>
+                    <option value="*">Умножение (*)</option>
+                    <option value="/">Деление (/)</option>
+                </select>
+
+                <label for="number-b">Второе число (b)</label>
+                <input
+                    id="number-b"
+                    type="number"
+                    step="any"
+                    placeholder="Например, 10"
+                    required
+                >
+
+                <button type="submit">Вычислить</button>
+
+            </form>
+
+            <div id="result" class="result">
+                Результат появится здесь.
+            </div>
+
+        </section>
+
+        <section class="info card">
+
+            <h2>Пример API-запроса</h2>
+
+            <code>
+                GET /api/calc?a=5&b=10&op=%2B
+            </code>
+
+            <p>
+                API принимает два числа и операцию
+                через query-параметры.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            Лабораторная работа №6 · Node.js + Express + PWA
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+
+</body>
+</html>

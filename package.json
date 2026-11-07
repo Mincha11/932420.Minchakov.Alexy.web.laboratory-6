@@ -1,0 +1,13 @@
+{
+  "name": "lab6-calculator",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №6 — Node.js, Express и PWA. Вариант 5: Калькулятор.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

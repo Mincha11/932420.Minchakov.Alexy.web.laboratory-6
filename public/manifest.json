@@ -1,0 +1,18 @@
+{
+    "name": "Калькулятор — лабораторная работа №6",
+    "short_name": "Калькулятор",
+    "description": "Арифметический калькулятор на Node.js и Express",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#100f1d",
+    "theme_color": "#17152b",
+    "icons": [
+        {
+            "src": "/icons/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

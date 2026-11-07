@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #f4f1ff;
+    background: #100f1d;
+}
+
+.container {
+    width: min(920px, calc(100% - 36px));
+    margin: 0 auto;
+}
+
+header {
+    background: #17152b;
+    border-bottom: 1px solid #34304f;
+}
+
+.header-content {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #b7a4ff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: #d5ccff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a9f36c;
+}
+
+.intro {
+    padding: 45px 0 25px;
+}
+
+.eyebrow {
+    color: #a9f36c;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+.intro p {
+    color: #c4bfd7;
+    line-height: 1.6;
+}
+
+.card {
+    padding: 28px;
+    margin: 18px 0;
+    background: #1b1930;
+    border: 1px solid #383354;
+    border-radius: 18px;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    color: #d8d2eb;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    color: white;
+    background: #11101e;
+    border: 1px solid #4a4568;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+button {
+    min-height: 48px;
+    margin-top: 10px;
+    color: #17152b;
+    background: #a9f36c;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c1ff8c;
+}
+
+.result {
+    min-height: 58px;
+    margin-top: 22px;
+    padding: 17px;
+    color: #e8e1ff;
+    background: #11101e;
+    border: 1px solid #4a4568;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.result.success {
+    border-color: #83cf4f;
+}
+
+.result.error {
+    color: #ffb5b5;
+    border-color: #c75d6a;
+}
+
+.info p {
+    color: #c4bfd7;
+    line-height: 1.6;
+}
+
+code {
+    padding: 5px;
+    color: #c9ff9f;
+    background: #11101e;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 24px 0;
+    color: #a9a3bd;
+    background: #17152b;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
